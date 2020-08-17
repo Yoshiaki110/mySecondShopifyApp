@@ -12,6 +12,7 @@ class Index extends React.Component {
           title="Sample App"
           primaryAction={{
             content: 'Select products',
+            onAction: () => this.setState({ open: true }),
           }}
         />
         <ResourcePicker
@@ -37,8 +38,9 @@ class Index extends React.Component {
     );
   }
   handleSelection = (resources) => {
+    const idsFromResources = resources.selection.map((product) => product.id);
     this.setState({ open: false })
-    console.log(resources)
+    console.log('idsFromResources', idsFromResources)
   };
 }
 

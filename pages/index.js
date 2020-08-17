@@ -1,6 +1,6 @@
 const Index = () => (
   <div>
-    <p>(ito)Sample app using React and Next.js(ito)</p>
+    <p>(ito2)Sample app using React and Next.js(ito2)</p>
   </div>
 );
 

@@ -1,0 +1,28 @@
+{
+  "name": "mySecondShopifyApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoshiaki110/mySecondShopifyApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoshiaki110/mySecondShopifyApp/issues"
+  },
+  "homepage": "https://github.com/Yoshiaki110/mySecondShopifyApp#readme",
+  "dependencies": {
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

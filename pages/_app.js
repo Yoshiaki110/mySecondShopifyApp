@@ -25,7 +25,7 @@ class MyApp extends App {
           <meta charSet="utf-8" />
         </Head>
         <Provider config={config}>
-          <AppProvider i18n={translations}>
+          <AppProvider>
             <ApolloProvider client={client}>
               <Component {...pageProps} />
             </ApolloProvider>

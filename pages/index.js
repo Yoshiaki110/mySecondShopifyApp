@@ -8,6 +8,7 @@ class Index extends React.Component {
   render() {
     return (
       <Page>
+        <!-- タイトルとボタン -->
         <TitleBar
           title="サンプル App"
           primaryAction={{
@@ -40,6 +41,7 @@ class Index extends React.Component {
     );
   }
 
+  // ResourcePickerでOK押されたら
   handleSelection = (resources) => {
     const idsFromResources = resources.selection.map((product) => product.id);
     this.setState({ open: false })

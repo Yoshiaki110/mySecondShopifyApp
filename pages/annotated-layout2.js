@@ -47,12 +47,42 @@ class AnnotatedLayout2 extends React.Component {
                 </FormLayout>
               </Form>
             </Card>
+            <Card sectioned>
+              <Form onSubmit={this.handleSubmit}>
+                <FormLayout>
+                  <TextField
+                    value={discount}
+                    onChange={this.handleChange('discount')}
+                    label="割引率"
+                    type="discount"
+                  />
+                  <Stack distribution="trailing">
+                    <Button primary submit>
+                      Save
+                    </Button>
+                  </Stack>
+                </FormLayout>
+              </Form>
+            </Card>
           </Layout.AnnotatedSection>
+
 
           <Layout.AnnotatedSection
             title="価格の更新"
             description="すべてのサンプルアプリの価格更新を一時的に無効にする"
           >
+            <SettingToggle
+              action={{
+                content: contentStatus,
+                onAction: this.handleToggle,
+              }}
+              enabled={enabled}
+            >
+              現在設定は{' '}
+              <TextStyle variation="strong">{textStatus}</TextStyle>
+              になっています。
+            </SettingToggle>
+
             <SettingToggle
               action={{
                 content: contentStatus,

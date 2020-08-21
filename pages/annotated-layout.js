@@ -25,6 +25,7 @@ class AnnotatedLayout extends React.Component {
     return (
       <Page>
         <Layout>
+
           <Layout.AnnotatedSection
             title="Default discount"
             description="Add a product to Sample App, it will automatically be discounted."
@@ -47,6 +48,7 @@ class AnnotatedLayout extends React.Component {
               </Form>
             </Card>
           </Layout.AnnotatedSection>
+
           <Layout.AnnotatedSection
             title="Price updates"
             description="Temporarily disable all Sample App price updates"
@@ -62,6 +64,7 @@ class AnnotatedLayout extends React.Component {
               <TextStyle variation="strong">{textStatus}</TextStyle>.
             </SettingToggle>
           </Layout.AnnotatedSection>
+
         </Layout>
       </Page>
     );

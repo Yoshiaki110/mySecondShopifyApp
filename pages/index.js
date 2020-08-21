@@ -9,12 +9,13 @@ class Index extends React.Component {
     return (
       <Page>
         <TitleBar
-          title="Sample App"
+          title="サンプル App"
           primaryAction={{
-            content: 'Select products',
+            content: '商品の選択',
             onAction: () => this.setState({ open: true }),
           }}
         />
+
         <ResourcePicker
           resourceType="Product"
           showVariants={false}
@@ -22,16 +23,17 @@ class Index extends React.Component {
           onSelection={(resources) => this.handleSelection(resources)}
           onCancel={() => this.setState({ open: false })}
         />
+
         <Layout>
           <EmptyState
-            heading="Discount your products temporarily"
+            heading="一時的に商品を割引"
             action={{
-              content: 'Select products',
+              content: '商品を選択',
               onAction: () => this.setState({ open: true }),
             }}
             image={img}
           >
-            <p>Select products to change their price temporarily.</p>
+            <p>価格を一時的に変更する製品を選択してください。</p>
           </EmptyState>
         </Layout>
       </Page>

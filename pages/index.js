@@ -8,7 +8,6 @@ class Index extends React.Component {
   render() {
     return (
       <Page>
-        <!-- タイトルとボタン -->
         <TitleBar
           title="サンプル App"
           primaryAction={{

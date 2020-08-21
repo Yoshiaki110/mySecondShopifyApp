@@ -19,16 +19,16 @@ class AnnotatedLayout2 extends React.Component {
 
   render() {
     const { discount, enabled } = this.state;
-    const contentStatus = enabled ? '–³Œø‰»' : '—LŒø‰»';
-    const textStatus = enabled ? '—LŒø' : '–³Œø';
+    const contentStatus = enabled ? 'ç„¡åŠ¹åŒ–' : 'æœ‰åŠ¹åŒ–';
+    const textStatus = enabled ? 'æœ‰åŠ¹' : 'ç„¡åŠ¹';
 
     return (
       <Page>
         <Layout>
 
           <Layout.AnnotatedSection
-            title="ƒfƒtƒHƒ‹ƒg‚ÌŠ„ˆø"
-            description="ƒTƒ“ƒvƒ‹ƒAƒvƒŠ‚É¤•i‚ğ’Ç‰Á‚·‚é‚Æ©“®“I‚ÉŠ„ˆø‚³‚ê‚Ü‚·B"
+            title="ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å‰²å¼•"
+            description="ã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã«å•†å“ã‚’è¿½åŠ ã™ã‚‹ã¨è‡ªå‹•çš„ã«å‰²å¼•ã•ã‚Œã¾ã™ã€‚"
           >
             <Card sectioned>
               <Form onSubmit={this.handleSubmit}>
@@ -36,7 +36,7 @@ class AnnotatedLayout2 extends React.Component {
                   <TextField
                     value={discount}
                     onChange={this.handleChange('discount')}
-                    label="Š„ˆø—¦"
+                    label="å‰²å¼•ç‡"
                     type="discount"
                   />
                   <Stack distribution="trailing">
@@ -50,8 +50,8 @@ class AnnotatedLayout2 extends React.Component {
           </Layout.AnnotatedSection>
 
           <Layout.AnnotatedSection
-            title="‰¿Ši‚ÌXV"
-            description="‚·‚×‚Ä‚ÌƒTƒ“ƒvƒ‹ƒAƒvƒŠ‚Ì‰¿ŠiXV‚ğˆê“I‚É–³Œø‚É‚·‚é"
+            title="ä¾¡æ ¼ã®æ›´æ–°"
+            description="ã™ã¹ã¦ã®ã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã®ä¾¡æ ¼æ›´æ–°ã‚’ä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ã™ã‚‹"
           >
             <SettingToggle
               action={{
@@ -60,9 +60,9 @@ class AnnotatedLayout2 extends React.Component {
               }}
               enabled={enabled}
             >
-              Œ»İİ’è‚Í{' '}
+              ç¾åœ¨è¨­å®šã¯{' '}
               <TextStyle variation="strong">{textStatus}</TextStyle>
-              ‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+              ã«ãªã£ã¦ã„ã¾ã™ã€‚
             </SettingToggle>
           </Layout.AnnotatedSection>
 
